@@ -1,0 +1,169 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*-----------------DISPOSITIVOS COM MENOS DE 805PX-------------------*/
+
+@media only screen and (max-width:805px){
+    
+    /*--MENU MOBILE CONFIGURAÇÕES--*/
+    .menu_inicio nav li {display:none; color:#000;} 
+    .menu_inicio {width:100%; height:85px;}
+    .menu_inicio #logolivro {width:195px; float:left; margin-bottom:0;}
+    .menu_inicio nav {width:135px; float:right; margin:25px 0 25px 15px;}
+    .menu_inicio #menu_content {width:90%; min-width:inherit;  margin:0 auto;}
+    
+    .menu_fixo #menu_content { width:90%; min-width:inherit; margin:0 auto;}
+    .menu_fixo #logolivro {width:110px; min-width:inherit; float:left; margin-top:6px;}
+    .menu_fixo nav {width:64%; min-width:285px;}
+    
+    .mudanca_body {padding-top:85px;}
+    #slideshow_content {min-width:inherit;}
+    #slideshow_content object {display:none;}
+    
+    .mobile_menu {
+        display:block;
+        background-image:url(../imagens/CaixaMenu.svg); background-position:center; background-repeat:no-repeat;
+        background-size:contain; -webkit-background-size:contain; -moz-background-size:contain; -ms-background-size:contain; -o-background-size:contain;
+        font-family: 'Source Sans Pro', sans-serif; font-size: 1.7em; text-transform:uppercase; color:#000;
+        float:right;
+        width:135px;
+        height:35px;
+        text-decoration:none;
+        padding-left:16px;
+        position:relative;
+        box-sizing:border-box;
+        cursor:pointer;
+    }
+    
+    .mobile_menu img:nth-child(1) {position:absolute; right:7px; top:7px;}
+    .mobile_menu img:nth-child(2) {position:absolute; right:7px; top:15px;}
+    .mobile_menu img:nth-child(3) {position:absolute; right:7px; bottom:7px;}
+    
+    .menuescondido_mobile {
+        font-family: 'Source Sans Pro', sans-serif;
+        position:fixed;
+        background-color:#F07E4C;
+        background-image:url(../imagens/PapelBackground.png);
+        text-align: center;
+        width:100%;
+        height:100%;
+        z-index:60;
+        top:0;
+    }
+    
+    .menuescondido_mobile {text-transform:uppercase; padding-top:50px; box-sizing:border-box;}
+    .menuescondido_mobile h2 {font-size:3em; font-weight:400; color:#f2f2f2; margin-bottom:10px;}
+    
+    .menuescondido_mobile li {
+        background-image:url(../imagens/CaixaMenuMobile.svg);
+        background-size:contain; -webkit-background-size:contain; -moz-background-size:contain; -ms-background-size:contain; -o-background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+        display:block;
+        margin:0 auto 0 auto;
+        list-style:none;
+        width:175px;
+        height:40px;
+        padding-top:8px;
+        margin-bottom:5px;
+    }
+    
+    .menuescondido_mobile li a:link, .menuescondido_mobile li a:visited {font-size: 1.5em; color:#f2f2f2; text-decoration:none;}
+    .menuescondido_mobile #elefante {position:absolute; width:25%; left:5%; top:5%;}
+    .menuescondido_mobile #dinocauro {position:absolute; width:35%; bottom:5%; right:5%; }
+    .menuescondido_mobile .close_bot {position:absolute; width:10%; top:5%; right:10%; cursor:pointer; }
+    /*--FIM MENU MOBILE CONFIGURAÇÕES--*/
+    
+    /*--BODY CONTENT CONFIGURAÇÕES--*/
+    #site_content {width:90%; min-width:inherit;}
+    
+    .sobre_nav, .destaques_nav {display:none;}
+    
+    .subcategorias {width:100%; margin-bottom:60px;}
+    .subcategorias h1 {font-size:2.5em;}
+    .subcategorias p {font-size:1.1em; line-height:1.25em;}/*--VER COM O PRFESSOR RICARDO SE A MARGEM É O MAIS CORRECTO--*/
+    #sobre_content .subcategorias .slideshow2 {margin:15px 0 4.9em 0;}
+    .subcategorias .botoes_slideshow2 {bottom:0.25em;}
+    .subcategorias .slide_2 .slide2_titulo {font-size:1.5em; top:100%; bottom:auto; background-color:#C4C492;}
+    
+    .undercategorias {margin-bottom:60px;}
+    .undercategorias h1 {font-size:2.5em;}
+    .undercategorias p {font-size:1.1em; line-height:1.25em; font-kerning:1em;}
+    #mencaoespecial_content {min-height:250px;}
+    #comprar_content {min-height:250px;}
+    #comprar .lojas_online {width:100%; padding:3%; margin-bottom:0.9%;}
+    #comprar .lojas_online img {width:75%;}
+    
+    .video_content { width:95%; height:50%; margin:20% auto;}
+    
+    footer {background-color:#F07E4C; position:static; width:100%;}
+    #footbotao {display:none;}
+    #footbotao_content {width:90%; min-width:inherit;}
+    #foot_content {display:block; width:90%; min-width:inherit; height:auto;}
+    #foot_content .link_titulo {float:none; margin: 10px 0 40px 0; color:#f2f2f2;}
+    #foot_content .link_titulo a:link, #foot_content .link_titulo a:visited {color:#f2f2f2;}
+    .link_titulo_content {float:left;}
+    #foot_content p {color:#F2F2F2; margin:30px 0 30px 0;}
+    #foot_content p a {color:#FFF;}
+    #foot_content p a:hover {color:#C4C492;}
+    #footicone {width:110px;}
+    #footicone img {margin:0 0 10% 0;}
+    #footicone img:nth-child(n+3) {display:none;}
+    #footicone img:nth-child(-n+2) {display:inline;}
+    #footicone img:last-child {margin-bottom:0;}
+    #footdino {display:block;}
+    
+    #navbottom_mobile {
+        width:100%;
+        height:40px;
+        position:fixed;
+        bottom:0;
+        background-color:#007B40;
+        background-image:url(../imagens/PapelBackground.png);
+        display:block;
+        z-index:20;
+    }
+    
+    .cetasmobile_content {position:relative; width:90%; margin:0 auto;}
+    
+    #navbottom_mobile  #para_baixo  {position:absolute; top:5px; bottom:5px; right:5px; cursor:pointer;}
+    #navbottom_mobile  #para_cima  {position:absolute; top:5px; bottom:5px; right:90px; cursor:pointer; transform:rotate(180deg); -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -o-transform:rotate(180deg); -ms-transform:rotate(180deg);}
+    
+    
+}
+
+
+
+
+/*-----------------DISPOSITIVOS COM MENOS DE 490PX-------------------*/
+
+@media only screen and (max-width:490px){
+    
+    #background_content {display:none;}
+    
+    #imprensa .slideshow2 {height: 550px;}
+    .slideshow2 .artigo {float:none; width:100%; height:120px; margin:0 auto 2px auto; padding-bottom:35px; }
+    .slideshow2 .artigo img {width:60%; margin:0 20% 0 20%;}
+    
+    .undercategorias p {width:100%;}
+    #mencaoespecial_content {min-height:420px;}
+    #comprar_content {min-height:250px;}
+    
+    #comprar .lojas_online {margin-bottom:1%;}
+    
+}
+
+
+/*-----------------DISPOSITIVOS COM MENOS DE 475PX-------------------*/
+
+@media only screen and (max-width:475px){
+    
+    .menu_inicio #logolivro {width:135px;}
+    .menu_fixo #logolivro {display:none;}
+    .menu_fixo nav {width:100%; min-width:inherit;}
+    
+    .slideshow2 .artigo { height:90px;}
+    
+    #mencaoespecial_content {min-height:470px;}
+}

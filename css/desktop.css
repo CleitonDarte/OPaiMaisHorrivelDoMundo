@@ -1,0 +1,473 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {margin:0; padding:0;}
+
+body {width:100%; height:100%; background-image:url(../imagens/PapelBackground.png);}
+
+/*------------------------background-----------------------------*/
+
+#background_content { width:100%; height:375%; position:fixed; top:0; overflow:hidden;}
+
+/*----------------------fim background-----------------------------*/
+
+/*----------------------animação de inicio------------------------*/
+
+#anime_inicio {
+    background-color:#FFF;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:20;
+    box-sizing:content-box;
+}
+
+#bot_fechar_anime {
+    width:35px;
+    position:absolute;
+    top:50px;
+    right:50px;
+    cursor:pointer;
+    z-index:25;
+}
+
+#EdgeID {width:100%; height:100%;}
+
+#EdgeID2 {height:100%; width:100%; display:none;}
+
+
+/*--------------------fim animação de inicio----------------------*/
+
+#body_content { width:100%; position:absolute; z-index:2;}
+.mudanca_body {padding-top:225px;}
+
+.clear:after{ content:'.'; display:block; clear:both; height:0; visibility:hidden;}
+
+/*---------------cabeçalho-----------------------------*/
+.menu_inicio {width:585px; margin:0 auto 0 auto;}
+
+.menu_inicio #logolivro {width:360px; margin:0 auto 36px auto; padding:0;}
+
+.menu_inicio nav {width:585px; height:35px;}
+
+/*--------------------menu_fixo------------------------*/
+
+.menu_fixo {
+    width:100%;
+    height:85px;
+    position:fixed;
+    top:-85px;
+    background-image:url(../imagens/PapelBackground.png);
+    background-color:#FFF;
+    box-shadow:0 1px 5px #4D4D4D; -webkit-box-shadow:0 1px 5px #4D4D4D; -moz-box-shadow:0 1px 5px #4D4D4D; -ms-box-shadow:0 1px 5px #4D4D4D; -o-box-shadow:0 1px 5px #4D4D4D;
+    z-index:5;
+}
+
+.menu_fixo #menu_content {
+    width:77.5%; min-width:768px; max-width:1100px;
+    height:85px;
+    margin:0 auto 0 auto;}
+
+.menu_fixo #logolivro { width:120px; float:left; margin-top:4px; margin-bottom:0;}
+
+.menu_fixo nav { float:right; margin:25px 0 25px 15px;}
+/*---------------------fim menu_fixo---------------------*/
+
+.menuescondido_mobile {display:none;}
+
+.mobile_menu {display:none;}
+
+.menu_inicio nav li {
+	background-image:url(../imagens/CaixaMenu.svg);
+	background-size:contain; -webkit-background-size:contain; -moz-background-size:contain; -ms-background-size:contain; -o-background-size:contain;
+	background-position:center;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+	margin:0 15px 0 0;
+	list-style:none;
+}
+
+.menu_inicio nav li:last-child {margin-right:0;}
+
+.menu_inicio nav li a:link, a:visited {
+	text-align:center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.375em;
+	text-transform:uppercase;
+	color:#000;
+	float:left;
+	width:135px;
+	height:31px;
+	text-decoration:none;
+	padding-top:4px;
+}
+
+.menu_inicio nav li:hover {background-image:url(../imagens/CaixaMenuOver.svg);}
+
+.menu_inicio nav .menu_activo {background-image:url(../imagens/CaixaMenuActive.svg); display:block;}
+
+/*----------------------------------------------------------------*/
+
+/*----------------------------slide show---------------------------*/
+
+#slideshow_content { width:77.5%; min-width:768px; max-width:1100px; margin:25px auto 25px auto; position:relative;}
+
+#slideshow_content #EdgeID3 {width:100%;}
+
+
+/*-------------------------------------------------------------------*/
+
+#frase_livro {
+    width:90%; max-width:400px;
+    min-height:55px;
+    margin:0 auto 0 auto;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1em;
+    font-style:italic;
+    text-align:center;
+    color:rgb(196,196,146);
+}
+
+/*-------------------corpo do site - seccções----------------------*/
+
+#site_content {position:relative; width:77.5%; min-width:768px; max-width:1100px; margin:2.1875em auto 0 auto;}
+
+.principais_categorias {position:relative; width:100%;}
+
+.subcategorias {width:84.94624%; padding:1.875em 0 3.125em 0; margin-bottom:120px; border-bottom:1px solid #C4C492;}
+
+.subcategorias h1 {
+    font-family:  'Source Sans Pro', sans-serif;
+    font-size:3.125em;
+    font-weight:300;
+    text-transform:uppercase;
+    color:#007B40;
+}
+
+.subcategorias p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1.2em;
+    font-weight:300;
+    text-transform:none;
+    color:#000;
+}
+
+.subcategorias .slideshow2 {width:100%; margin:15px 0 15px 0; position:relative;}
+
+.subcategorias .botoes_slideshow2 {
+	height:0.9375em;
+	position:absolute;
+	bottom:3.4375em;
+	right:0.9375em;
+    z-index:3;
+}
+
+.subcategorias .botoes_slideshow2 .botao_slide2 {
+	background-color:#5DB473;
+	width:0.9375em;
+	height:0.9375em;
+	float:left;
+	border-radius:100%; -webkit-border-radius:100%; -moz-border-radius:100%; -ms-border-radius:100%; -o-border-radius:100%;
+	margin-right:0.3125em;
+    cursor:pointer;
+}
+
+.subcategorias .botoes_slideshow2 .botao_slide2:last-child {margin-right:0px;}
+
+.subcategorias .botoes_slideshow2 .botao_active_slide2 {
+	background-color:#FFF;
+	width:0.625em;
+	height:0.625em;
+	border:0.15625em solid #5DB473;
+}
+
+.subcategorias .slideshow2 .slide_2 {position:relative; width:100%;}
+
+.subcategorias .slide2_img {width:100%; display:block;}
+
+.subcategorias .slide_2 .slide2_titulo {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1.5625em;
+    font-weight:300;
+    text-transform:none;
+    color: #fff;
+    width:100%;
+    padding:0.28em 0 0.28em 1.89873%;
+    background-color:rgba(196,196,146,0.75);
+    position:absolute;
+    box-sizing:border-box;
+    bottom:0px;
+}
+
+/*------------------------slideshow no sobre-------------------------*/
+
+.livroslide { display:none;}
+.livroslide:first-child { display:block;}
+
+.escritorslide { display:none;}
+.escritorslide:first-child { display:block;}
+
+.ilustradorslide { display:none;}
+.ilustradorslide:first-child { display:block;}
+
+/*------------------------slideshow escritor-------------------------*/
+
+
+
+/*--------------------sobre------------------------*/
+.sobre_nav {
+    position:absolute;
+    width:11%;
+    top:6.875em;
+    right:0;
+}
+
+.sobre_nav img {
+    width:100%;
+    display:block;
+    margin:0 0 2.85714% 0;
+}
+
+.sobre_nav img:hover {
+    background-image:url(../imagens/SeccaoOvers.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+/*------------------fim sobre----------------------*/
+
+
+
+
+/*-------------------destaques---------------------*/
+.destaques_nav {position:absolute; width:11%; top:6.875em; right:0;}
+
+.destaques_nav img {width:100%; display:block; margin:0 0 2.85714% 0;}
+
+.destaques_nav img:hover {
+    background-image:url(../imagens/SeccaoOvers.png);
+    background-position:center;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+
+#passatempo a:link, #passatempo a:visited {color:#000;}
+#passatempo a:hover {color:#F07E4C;}
+
+#sobre_escritor a:link, #sobre_escritor a:visited {color:#000;}
+#sobre_escritor a:hover {color:#F07E4C;}
+
+#eventos a:link, #eventos a:visited {color:#000;}
+#eventos a:hover {color:#F07E4C;}
+
+#sobre_ilustrador a:link, #sobre_ilustrador a:visited {color:#000;}
+#sobre_ilustrador a:hover {color:#F07E4C;}
+
+#img_ocupar {display:block;}
+
+.slideshow2 .artigos {position:absolute; width:100%; bottom:0;}
+
+.slideshow2 .artigo {
+    width:33.16456%;
+    background-color:#C4C492;
+    background-image:url(../imagens/PapelBackground.png);
+    float:left;
+    margin:0 0.25316% 0 0;
+    cursor:pointer;
+}
+
+.slideshow2 .artigo:last-child {margin-right:0;}
+
+.slideshow2 .artigo:hover {background-color:#F07E4C;}
+
+#youtube_video {
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.75);
+    position:fixed;
+    top:0;
+    z-index:100;
+    display:none;
+}
+
+.video_content {width:50%; height:75%; margin:5% auto;}
+
+#fexar_video {width:40px; float:right; cursor:pointer;}
+
+#video_livro {width:100%; height:100%;}
+/*----FIM IMPRENSA-----*/
+
+/*-----------------fim destaques-------------------*/
+
+
+
+
+/*-------------menção especial e comprar-----------*/
+
+.undercategorias {
+    width:100%;
+    padding:1.875em 0 3.125em 0;
+    margin-bottom:120px;
+    border-bottom:1px solid #C4C492;
+}
+
+#comprar {margin-bottom:40px;}
+
+.undercategorias h1 {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:3.125em;
+    font-weight:300;
+    text-transform:uppercase;
+    color:#007B40;
+}
+
+.undercategorias p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1.2em;
+    font-weight:300;
+    text-transform:none;
+    color:#000;
+    margin:1em 0 2.2em 0;
+    width:60%;
+}
+
+#lojas_content {width:60%;}
+
+#comprar .lojas_online {
+    width:33%;
+    padding:5% 1%;
+    text-align:center;
+    background-color:#C4C492;
+    background-image:url(../imagens/PapelBackground.png);
+    box-sizing:border-box;
+    display:inline-block;
+}
+
+#comprar .lojas_online img {position:static; width:95%; height:80px;}
+
+#comprar .lojas_online {margin-right:-0.3%;}
+
+#comprar .lojas_online:hover {background-color:#F07E4C;}
+
+#mencaoespecial_content {width:100%; min-height:320px;}
+#comprar_content {width:100%; min-height:320px;}
+
+.undercategorias img {width:38%; max-height:390px; position:absolute; bottom:50px; right:0;}
+
+/*-----------fim menção especial e comprar---------*/
+
+
+/*-----------------------fim corpo site---------------------------*/
+
+
+
+
+
+
+/*------------------------------footer----------------------------*/
+
+#navbottom_mobile {display:none;}
+
+footer {
+    background-color:#007B40;
+    background-image:url(../imagens/PapelBackground.png);
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    z-index:5;
+}
+
+#footbotao_content {width:77.5%; min-width:768px; max-width:1100px; height:30px; margin:0 auto 0 auto;}
+
+#footbotao {
+    background-color:#FFF;
+    width:42px;
+    height:42px;
+    position:relative;
+    top:-16px;
+    border-radius:100px; -webkit-border-radius:100%; -moz-border-radius:100%; -ms-border-radius:100%; -o-border-radius:100%;
+    cursor:pointer;
+}
+
+.botaofundo {position:absolute; top:1px; right:1px; bottom:1px; left:1px;}
+
+.botaoindic1 {
+    position:absolute;
+    transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg);
+    top:11px; left:18.5px;
+    transition:1s; -webkit-transition:1s; -moz-transition:1s; -ms-transition:1s; -o-transition:1s;
+}
+
+.botaoindic2 {
+    position:absolute;
+    transform:rotate(90deg); -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg);
+    top:11px; right:18.5px;
+    transition:1s; -webkit-transition:1s; -moz-transition:1s; -ms-transition:1s; -o-transition:1s;
+}
+
+/*---------------------animação botao footer quando click-----------------------*/
+
+.botaoindic1click_anim { transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -moz-transform:rotate(-45deg); -ms-transform:rotate(-45deg); -o-transform:rotate(-45deg);}
+
+.botaoindic2click_anim { transform:rotate(45deg); -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); -ms-transform:rotate(45deg); -o-transform:rotate(45deg);}
+
+/*----------------------------------------------------------------------------*/
+
+#foot_content {
+    display:none;
+    width:77.5%; min-width:768px;  max-width:1100px;
+    height:150px;
+    margin:0 auto 0 auto;
+    position:relative;
+}
+
+#foot_content .link_titulo{
+    float:left;
+    margin: 10px 40px 0 0;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1.5625em;
+    color:#C4C492;
+}
+
+#foot_content .link_titulo a:link, #foot_content .link_titulo a:visited {color:#C4C492; text-decoration:none;}
+
+#foot_content .link_titulo a:hover {text-decoration:underline;}
+
+#foot_content li {
+    font-size:0.64em;
+    font-weight:300;
+    list-style:none;
+    margin:0 0 0 10px;
+}
+
+#footicone {
+    width:255px;
+    float:right;
+    margin:10px 0 0 0;
+}
+
+#footicone img:nth-child(-n+2){display:none;}
+
+#footicone img {float:right; margin-left:10%;}
+
+#footicone img:last-child {margin-left:0;}
+
+#foot_content p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size:1em;
+    font-weight:300;
+    color:#C4C492;
+    float:left;
+    margin:30px 0 0 10px;
+}
+
+#foot_content p a {text-transform:uppercase; font-weight:normal; color:#C4C492;}
+
+#foot_content p a:hover {color:#F07E4C;}
+
+#footdino {display:none;}
+/*-----------------------------------------------------------------*/
